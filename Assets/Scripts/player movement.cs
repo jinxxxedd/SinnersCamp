@@ -10,7 +10,8 @@ public class playermovement : MonoBehaviour
     float speed;
     [SerializeField] float speedMultiplier = 2.0f;
 
-    
+    public SimpleDialog simpleDialog;
+
 
     // Start is called before the first frame update
     void Start()
@@ -75,9 +76,9 @@ public class playermovement : MonoBehaviour
             Debug.Log("next scene");
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex + 1);
-
-        }
         
+            
+
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
@@ -101,6 +102,12 @@ public class playermovement : MonoBehaviour
         }
 
 
+
+        }
+        
+        
+
+
         if (collider.gameObject.CompareTag("boat"))
         {
             Debug.Log("win");           
@@ -113,6 +120,12 @@ public class playermovement : MonoBehaviour
             Debug.Log("die");
             SceneManager.LoadScene(5);
 
+        }
+
+        if (collider.gameObject.CompareTag("corpse"))
+        {
+            Debug.Log("dead");
+            simpleDialog.dialouge();
         }
 
 
