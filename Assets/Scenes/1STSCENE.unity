@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 16028979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -0.43, z: 0}
+  m_LocalPosition: {x: -17.24, y: 6.63, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -299,8 +299,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1316642834}
   dialogText: {fileID: 1648126682}
-  message: Damn it, I peed the bed. What happened here? I don't remember this on
-    the activities list.
+  message: 'Damn it, I peed the bed. What happened here? I don''t remember this on
+    the activities list.  I should see where the councilors are and maybe they can
+    helpr '
 --- !u!61 &74573157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -766,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 929761192}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.5, z: 0}
+  m_LocalPosition: {x: -17, y: 11.559999, z: 0}
   m_LocalScale: {x: 15, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1574,11 +1575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -4.4300003
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3.8299994
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.z
