@@ -16,7 +16,7 @@ public class playermovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(-5, 1, 0);
+      
 
     }
 
@@ -98,7 +98,7 @@ public class playermovement : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(-4.5f, 1f, 0);
+            transform.position = new Vector3(21.5f, 7f, 0);
         }
 
 
