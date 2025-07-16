@@ -12,17 +12,17 @@ public class Monster : MonoBehaviour
     {
         transform.position = new Vector3(0, -2, 0);
 
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(0, -3, 0);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(-9, -0.5f, 0);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(-4.5f, -2f, 0);

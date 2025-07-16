@@ -78,28 +78,42 @@ public class playermovement : MonoBehaviour
 
         }
         
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(-5, 1, 0);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(0, 3, 0);
             
         }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(-7, -0.5f, 0);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(-4.5f, 0.5f, 0);
+            transform.position = new Vector3(-4.5f, 1f, 0);
         }
 
+
+        if (collider.gameObject.CompareTag("boat"))
+        {
+            Debug.Log("win");           
+            SceneManager.LoadScene(6);
+
+        }
+
+        if (collider.gameObject.CompareTag("monster"))
+        {
+            Debug.Log("die");
+            SceneManager.LoadScene(5);
+
+        }
 
 
     }
