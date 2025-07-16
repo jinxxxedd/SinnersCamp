@@ -2,21 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playermovement : MonoBehaviour
 {
     [SerializeField] float basespeed = 5.0f;
     float speed;
+    [SerializeField] float speedMultiplier = 2.0f;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
         
+       
+    }
+
+    public float GetX()
+    {
+        Vector3 pos = transform.position;
+        return pos.x;
+    }
+
+    public float GetY()
+    {
+        Vector3 pos = transform.position;
+        return pos.y;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+        
+
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * Time.deltaTime * speed);
@@ -36,11 +58,36 @@ public class playermovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = basespeed * 2;
+            speed = basespeed * speedMultiplier;
         }
         else 
         {
             speed = basespeed;
+        }
+
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("door"))
+        {
+            Debug.Log("next scene");
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1);
+
+        }
+        
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(-5, 1, 0);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(0, 3, 0);
+            
         }
 
 
