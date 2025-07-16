@@ -89,6 +89,17 @@ public class playermovement : MonoBehaviour
             transform.position = new Vector3(0, 3, 0);
             
         }
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(-7, -0.5f, 0);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(-4.5f, 0.5f, 0);
+        }
+
 
 
     }

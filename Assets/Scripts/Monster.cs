@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Monster : MonoBehaviour
 {
@@ -11,6 +12,24 @@ public class Monster : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(0, -2, 0);
+
+        
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(0, -3, 0);
+
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(-9, -0.5f, 0);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(-4.5f, -2f, 0);
+        }
     }
 
     // Update is called once per frame
