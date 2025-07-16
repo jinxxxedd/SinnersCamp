@@ -8,17 +8,14 @@ public class Monster : MonoBehaviour
     public playermovement player;
     [SerializeField] public float speed = 2.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         transform.position = new Vector3(0, -2, 0);
 
-        
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(0, -3, 0);
-
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -32,7 +29,6 @@ public class Monster : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 Monpos = transform.position;
@@ -55,6 +51,18 @@ public class Monster : MonoBehaviour
         {
             transform.Translate(Vector3.down * Time.deltaTime * speed);
         }
+    }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Player touched by monster!");
+            GameManager.instance.LoseLife();
+
+            // Optional: move monster away for 1 second delay (or handle respawn)
+            transform.position = new Vector3(-100, -100, 0);
+        }
     }
 }
+
