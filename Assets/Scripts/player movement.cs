@@ -17,7 +17,20 @@ public class playermovement : MonoBehaviour
 
     public bool hasKey = false;
 
+<<<<<<< Updated upstream
+=======
+    public REAL_GATE realGate;
+
+
+>>>>>>> Stashed changes
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        //DontDestroyOnLoad(gameObject);
+    }
+
+
     void Start()
     {
 
@@ -145,9 +158,23 @@ public class playermovement : MonoBehaviour
             Destroy(collider.gameObject); // Destroy the key GameObject
 
         }
+        
+        if (collider.gameObject.CompareTag("gate") && hasKey)
+        {
+            Debug.Log("open gate");
+            Destroy(collider.gameObject); // Destroy the key GameObject
+            realGate.openGate(); // Call the openGate method on the REAL_GATE script
 
+        }
+        else if (collider.gameObject.CompareTag("gate") && !hasKey)
+        {
+            Debug.Log("need key to open gate");
+            
+        }
 
     }
+
+    
     /*
     void OnTriggerStay2D(Collider2D collider)
     {
