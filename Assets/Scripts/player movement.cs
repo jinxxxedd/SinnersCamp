@@ -16,58 +16,9 @@ public class playermovement : MonoBehaviour
     public Monster monster;
 
     public bool hasKey = false;
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
-    public REAL_GATE realGate;
-=======
     public REAL_GATE realGate;
 
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
-
-
->>>>>>> Stashed changes
+   
     // Start is called before the first frame update
 
     private void Awake()
