@@ -10,13 +10,11 @@ public class playermovement : MonoBehaviour
     float speed;
     [SerializeField] float speedMultiplier = 2.0f;
 
-    public SimpleDialog simpleDialog;
-
 
     // Start is called before the first frame update
     void Start()
     {
-      
+
 
     }
 
@@ -37,7 +35,7 @@ public class playermovement : MonoBehaviour
     {
 
 
-        
+
 
 
         if (Input.GetKey(KeyCode.W))
@@ -61,7 +59,7 @@ public class playermovement : MonoBehaviour
         {
             speed = basespeed * speedMultiplier;
         }
-        else 
+        else
         {
             speed = basespeed;
         }
@@ -76,41 +74,41 @@ public class playermovement : MonoBehaviour
             Debug.Log("next scene");
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex + 1);
-        
-            
-
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(-5, 1, 0);
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(0, 3, 0);
-            
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(-7, -0.5f, 0);
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(21.5f, 7f, 0);
-        }
 
 
 
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+                transform.position = new Vector3(-5, 1, 0);
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+                transform.position = new Vector3(0, 3, 0);
+
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+                transform.position = new Vector3(-7, -0.5f, 0);
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
+                transform.position = new Vector3(21.5f, 7f, 0);
+            }
+
+
+
         }
-        
-        
+
+
 
 
         if (collider.gameObject.CompareTag("boat"))
         {
-            Debug.Log("win");           
+            Debug.Log("win");
             SceneManager.LoadScene(6);
 
         }
@@ -125,7 +123,6 @@ public class playermovement : MonoBehaviour
         if (collider.gameObject.CompareTag("corpse"))
         {
             Debug.Log("dead");
-            simpleDialog.dialouge();
         }
 
 
