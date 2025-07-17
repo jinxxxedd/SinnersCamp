@@ -23,6 +23,7 @@ public class playermovement : MonoBehaviour
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     public REAL_GATE realGate;
 =======
@@ -35,6 +36,10 @@ public class playermovement : MonoBehaviour
     public REAL_GATE realGate;
 =======
     public REAL_GATE realGate;
+=======
+    public REAL_GATE realGate;
+
+>>>>>>> Stashed changes
 
 >>>>>>> Stashed changes
 
