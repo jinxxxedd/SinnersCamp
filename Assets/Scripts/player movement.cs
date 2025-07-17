@@ -18,8 +18,13 @@ public class playermovement : MonoBehaviour
     public bool hasKey = false;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     public REAL_GATE realGate;
+=======
+    public REAL_GATE realGate;
+
+>>>>>>> Stashed changes
 
 
 >>>>>>> Stashed changes
