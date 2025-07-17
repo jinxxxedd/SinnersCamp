@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,8 @@ public class playermovement : MonoBehaviour
 
     public SimpleDialog simpleDialog;
     public Monster monster;
+
+    public bool hasKey = false;
 
 
     // Start is called before the first frame update
@@ -136,6 +139,13 @@ public class playermovement : MonoBehaviour
             collider.gameObject.SetActive(false); // Disable the Counciler GameObject
         }
 
+        if (collider.gameObject.CompareTag("key"))
+        {
+            Debug.Log("get key");
+            hasKey = true;
+            Destroy(collider.gameObject); // Destroy the key GameObject
+
+        }
 
 
     }

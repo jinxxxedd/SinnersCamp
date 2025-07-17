@@ -10,6 +10,7 @@ TagManager:
   - player
   - corpse
   - Counciler
+  - key
   layers:
   - Default
   - TransparentFX
