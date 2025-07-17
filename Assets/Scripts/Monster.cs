@@ -15,7 +15,8 @@ public class Monster : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(0, -3, 0);
+            transform.position = new Vector3(6, -0.5f, 0);
+            gameObject.SetActive(false); // Disable monster in this scene
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
@@ -62,6 +63,15 @@ public class Monster : MonoBehaviour
 
             // Optional: move monster away for 1 second delay (or handle respawn)
             transform.position = new Vector3(-100, -100, 0);
+        }
+    }
+
+    public void ActivateMonster()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            gameObject.SetActive(true); // Enable monster in this scene
+            transform.position = new Vector3(7, -0.5f, 0);
         }
     }
 }

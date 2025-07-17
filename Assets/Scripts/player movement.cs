@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,11 @@ public class playermovement : MonoBehaviour
     float speed;
     [SerializeField] float speedMultiplier = 2.0f;
 
+
+
+    public Monster monster;
+
+    public bool hasKey = false;
 
     // Start is called before the first frame update
     void Start()
@@ -125,6 +131,31 @@ public class playermovement : MonoBehaviour
             Debug.Log("dead");
         }
 
+        if (collider.gameObject.CompareTag("Counciler"))
+        {
+            Debug.Log("dead2");
+            monster.ActivateMonster();
+            collider.gameObject.SetActive(false); // Disable the Counciler GameObject
+        }
+
+        if (collider.gameObject.CompareTag("key"))
+        {
+            Debug.Log("get key");
+            hasKey = true;
+            Destroy(collider.gameObject); // Destroy the key GameObject
+
+        }
+
 
     }
+    /*
+    void OnTriggerStay2D(Collider2D collider)
+    {
+        Debug.Log("Player is in trigger with: " + collider.gameObject.name);
+
+        
+
+        
+    }
+    */
 }
