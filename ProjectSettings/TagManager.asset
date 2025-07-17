@@ -11,6 +11,7 @@ TagManager:
   - corpse
   - Counciler
   - key
+  - gate
   layers:
   - Default
   - TransparentFX

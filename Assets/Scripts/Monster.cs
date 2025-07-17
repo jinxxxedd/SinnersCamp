@@ -26,7 +26,7 @@ public class Monster : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
-            transform.position = new Vector3(-21.5f, 5f, 0);
+            transform.position = new Vector3(-21.5f, 2f, 0);
         }
     }
 
