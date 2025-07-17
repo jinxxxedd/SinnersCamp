@@ -9,6 +9,7 @@ TagManager:
   - monster
   - player
   - corpse
+  - Counciler
   layers:
   - Default
   - TransparentFX

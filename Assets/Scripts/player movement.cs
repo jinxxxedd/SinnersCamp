@@ -11,6 +11,7 @@ public class playermovement : MonoBehaviour
     [SerializeField] float speedMultiplier = 2.0f;
 
     public SimpleDialog simpleDialog;
+    public Monster monster;
 
 
     // Start is called before the first frame update
@@ -128,6 +129,24 @@ public class playermovement : MonoBehaviour
             simpleDialog.dialouge();
         }
 
+        if (collider.gameObject.CompareTag("Counciler"))
+        {
+            Debug.Log("dead2");
+            monster.ActivateMonster();
+            collider.gameObject.SetActive(false); // Disable the Counciler GameObject
+        }
+
+
 
     }
+    /*
+    void OnTriggerStay2D(Collider2D collider)
+    {
+        Debug.Log("Player is in trigger with: " + collider.gameObject.name);
+
+        
+
+        
+    }
+    */
 }
