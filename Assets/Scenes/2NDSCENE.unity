@@ -1134,6 +1134,10 @@ PrefabInstance:
       propertyPath: monster
       value: 
       objectReference: {fileID: 125464769}
+    - target: {fileID: 1792261180704440578, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: basespeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03
