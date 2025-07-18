@@ -27,7 +27,7 @@ public class CutsceneActivator : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !CutsceneSystem.Instance.IsCutsceneActive)
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             if (lines != null && lines.Length > 0)
             {
