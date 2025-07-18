@@ -8,6 +8,9 @@ public class Monster : MonoBehaviour
     public playermovement player;
     [SerializeField] public float speed = 2.0f;
 
+    public chaseMusic chaseMusic; // Reference to the chase music script
+
+
     void Start()
     {
         transform.position = new Vector3(0, -2, 0);
@@ -28,6 +31,9 @@ public class Monster : MonoBehaviour
             Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
             transform.position = new Vector3(-21.5f, 2f, 0);
         }
+
+        
+
     }
 
     void Update()
@@ -52,6 +58,10 @@ public class Monster : MonoBehaviour
         {
             transform.Translate(Vector3.down * Time.deltaTime * speed);
         }
+
+
+
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -72,6 +82,7 @@ public class Monster : MonoBehaviour
         {
             gameObject.SetActive(true); // Enable monster in this scene
             transform.position = new Vector3(7, -0.5f, 0);
+            chaseMusic.PlayShootSound(); // Play chase music when monster is activated
         }
     }
 }
