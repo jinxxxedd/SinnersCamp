@@ -1700,11 +1700,11 @@ GameObject:
   - component: {fileID: 1878462638}
   m_Layer: 5
   m_Name: DialogueCanvas
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1878462637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1930,6 +1930,10 @@ PrefabInstance:
     - target: {fileID: 7889176470630203699, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889176470630203699, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7889176470630203699, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_TagString
