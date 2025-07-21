@@ -828,9 +828,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Camper
-    portrait: {fileID: 21300000, guid: fb92d5ca02001f446bf37987a9454a40, type: 3}
-    lineText: Hey Zeke this is no time to be drunk people are dying!
-  - speakerName: Camper
     portrait: {fileID: 21300000, guid: 4a3bc38c22175ae4891e6795821593b8, type: 3}
     lineText: WAHHH! HOLY SHIT!
 --- !u!61 &862186128
@@ -2360,6 +2357,14 @@ PrefabInstance:
     - target: {fileID: 7889176470630203699, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923096865228199805, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923096865228199805, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6.72
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7095488074248578187, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}

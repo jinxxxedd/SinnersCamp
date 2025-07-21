@@ -138,13 +138,25 @@ public class playermovement : MonoBehaviour
         if (collider.gameObject.CompareTag("corpse"))
         {
             Debug.Log("dead");
+            StartCoroutine(wait(1, collider.gameObject)); // Wait for 2 seconds before disabling the Counciler GameObject
+            
+            
+        }
+
+        if (collider.gameObject.CompareTag("deadmate"))
+        {
+            Debug.Log("dead");
+            StartCoroutine(wait(1, collider.gameObject)); // Wait for 2 seconds before disabling the Counciler GameObject
+
+
         }
 
         if (collider.gameObject.CompareTag("Counciler"))
         {
             Debug.Log("dead2");
             monster.ActivateMonster();
-            collider.gameObject.SetActive(false); // Disable the Counciler GameObject
+            StartCoroutine(wait(2, collider.gameObject)); // Wait for 2 seconds before disabling the Counciler GameObject
+
         }
 
         if (collider.gameObject.CompareTag("key"))
@@ -170,7 +182,14 @@ public class playermovement : MonoBehaviour
 
     }
 
-    
+    IEnumerator wait(int time, GameObject obj)
+    {
+        yield return new WaitForSeconds(time);
+        obj.SetActive(false); // Disable the Counciler GameObject
+    }
+
+
+
     /*
     void OnTriggerStay2D(Collider2D collider)
     {
