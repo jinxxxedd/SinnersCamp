@@ -12,6 +12,7 @@ TagManager:
   - Counciler
   - key
   - gate
+  - deadmate
   layers:
   - Default
   - TransparentFX

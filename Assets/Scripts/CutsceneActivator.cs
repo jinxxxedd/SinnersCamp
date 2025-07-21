@@ -27,7 +27,7 @@ public class CutsceneActivator : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange)
         {
             // Prevent activating dialogue again if one is already active
             if (!CutsceneSystem.Instance.IsCutsceneActive)
@@ -42,5 +42,6 @@ public class CutsceneActivator : MonoBehaviour
                 }
             }
         }
+       
     }
 }
