@@ -26,6 +26,9 @@ public class CutsceneSystem : MonoBehaviour
 
     public void StartCutscene(DialogueLine[] lines)
     {
+        // Prevent starting a new cutscene if one is already active
+        if (IsCutsceneActive) return;
+
         currentLines = lines;
         currentIndex = 0;
         dialoguePanel.SetActive(true);

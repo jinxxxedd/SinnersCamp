@@ -29,15 +29,18 @@ public class CutsceneActivator : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (lines != null && lines.Length > 0)
+            // Prevent activating dialogue again if one is already active
+            if (!CutsceneSystem.Instance.IsCutsceneActive)
             {
-                CutsceneSystem.Instance.StartCutscene(lines);
-            }
-            else
-            {
-                Debug.LogWarning("No dialogue lines set in CutsceneActivator.");
+                if (lines != null && lines.Length > 0)
+                {
+                    CutsceneSystem.Instance.StartCutscene(lines);
+                }
+                else
+                {
+                    Debug.LogWarning("No dialogue lines set in CutsceneActivator.");
+                }
             }
         }
     }
-
 }
