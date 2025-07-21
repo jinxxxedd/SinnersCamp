@@ -897,7 +897,7 @@ Transform:
   m_GameObject: {fileID: 253752065}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.706851, w: 0.7073625}
-  m_LocalPosition: {x: -21.55, y: 32.43, z: 0}
+  m_LocalPosition: {x: -21.55, y: 32.93, z: 0}
   m_LocalScale: {x: 1.2721875, y: 1.2721875, z: 1.2721875}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2164,8 +2164,8 @@ MonoBehaviour:
   lines:
   - speakerName: Camper
     portrait: {fileID: 21300000, guid: 4a3bc38c22175ae4891e6795821593b8, type: 3}
-    lineText: There's a gate ahead, I need to find the key to unlock it and geat
-      out of here!!
+    lineText: There's a gate ahead, I need to find the key to unlock it and get out
+      of here!!
 --- !u!61 &1873384275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2272,7 +2272,7 @@ Transform:
   m_GameObject: {fileID: 1873384273}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.706851, w: 0.7073625}
-  m_LocalPosition: {x: -21.55, y: 8.75, z: 0}
+  m_LocalPosition: {x: -21.49, y: 7.18, z: 0}
   m_LocalScale: {x: 1.2721875, y: 1.2721875, z: 1.2721875}
   m_ConstrainProportionsScale: 1
   m_Children: []

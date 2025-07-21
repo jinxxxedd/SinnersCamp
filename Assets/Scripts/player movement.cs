@@ -143,14 +143,6 @@ public class playermovement : MonoBehaviour
             
         }
 
-        if (collider.gameObject.CompareTag("deadmate"))
-        {
-            Debug.Log("dead");
-            StartCoroutine(wait(1, collider.gameObject)); // Wait for 2 seconds before disabling the Counciler GameObject
-
-
-        }
-
         if (collider.gameObject.CompareTag("Counciler"))
         {
             Debug.Log("dead2");
