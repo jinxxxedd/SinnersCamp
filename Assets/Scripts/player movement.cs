@@ -11,7 +11,7 @@ public class playermovement : MonoBehaviour
     float speed;
     [SerializeField] float speedMultiplier = 2.0f;
 
-
+    public Animator animator;
 
     public Monster monster;
 
@@ -48,28 +48,14 @@ public class playermovement : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
+        // Get input axes
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
+        // Movement direction
+        Vector3 moveDir = new Vector3(moveX, moveY, 0).normalized;
 
-
-
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(Vector3.up * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector3.down * Time.deltaTime * speed);
-        }
-
+        // Speed boost when holding shift
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = basespeed * speedMultiplier;
@@ -79,8 +65,25 @@ public class playermovement : MonoBehaviour
             speed = basespeed;
         }
 
+        // Move the character
+        transform.Translate(moveDir * speed * Time.deltaTime);
 
+        // Flip the character sprite based on horizontal movement
+        if (moveX < 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (moveX > 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+
+        // Update animator parameters for directional animation control
+        animator.SetFloat("MoveX", moveX);
+        animator.SetFloat("MoveY", moveY);
+        animator.SetFloat("Movement", Mathf.Clamp01(Mathf.Abs(moveX) + Mathf.Abs(moveY)));
     }
+
 
     void OnTriggerEnter2D(Collider2D collider)
     {

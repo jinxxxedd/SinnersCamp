@@ -1165,7 +1165,7 @@ Animator:
   m_GameObject: {fileID: 424550654}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 490f1022e932d9e4f87aa5385b23a692, type: 2}
+  m_Controller: {fileID: 9100000, guid: 72d0ef7a02d530a48afeff475a4f7d24, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2175,13 +2175,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 125464769}
     - target: {fileID: 1792261180704440578, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 929791471}
+    - target: {fileID: 1792261180704440578, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: basespeed
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3941493482488181132, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d004d31adcc7a0a4db546896a2ccec40, type: 3}
+      objectReference: {fileID: 1330978176, guid: 84d5760247f9e3541953a0d53b6da27f, type: 3}
     - target: {fileID: 3941493482488181132, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2196,19 +2200,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.3239669
+      value: 0.475
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.28698683
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.251
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.562
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2240,6 +2248,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973136030750867892, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889176470630203699, guid: c1abbf9c206fd7248aea480bc0e0ac16, type: 3}
