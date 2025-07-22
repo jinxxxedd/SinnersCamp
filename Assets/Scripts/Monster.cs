@@ -85,5 +85,6 @@ public class Monster : MonoBehaviour
             chaseMusic.PlayShootSound(); // Play chase music when monster is activated
         }
     }
+
 }
 

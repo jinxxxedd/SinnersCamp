@@ -149,7 +149,7 @@ public class playermovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Counciler"))
         {
             Debug.Log("dead2");
-            monster.ActivateMonster();
+            StartCoroutine(cutsceneWait(2)); // Wait for 2 seconds before activating the monster
             StartCoroutine(wait(2, collider.gameObject)); // Wait for 2 seconds before disabling the Counciler GameObject
 
         }
@@ -181,6 +181,12 @@ public class playermovement : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         obj.SetActive(false); // Disable the Counciler GameObject
+    }
+
+    IEnumerator cutsceneWait(int time)
+    {
+        yield return new WaitForSeconds(time);
+        monster.ActivateMonster(); // Activate the monster after the cutscene
     }
 
 
