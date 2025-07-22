@@ -110,6 +110,7 @@ public class playermovement : MonoBehaviour
             {
                 Debug.Log("Scene is " + SceneManager.GetActiveScene().buildIndex);
                 transform.position = new Vector3(-7, -0.5f, 0);
+                StartCoroutine(cutsceneWait(2)); // Wait for 2 seconds before activating the monster
             }
             if (SceneManager.GetActiveScene().buildIndex == 4)
             {

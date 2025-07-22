@@ -194,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basespeed: 3
   speedMultiplier: 2
-  simpleDialog: {fileID: 0}
-  monster: {fileID: 0}
+  animator: {fileID: 0}
+  monster: {fileID: -34457101912442631, guid: 60ecf42e03325364e85da9c59b964a0d, type: 3}
   hasKey: 0
   realGate: {fileID: 3718723529718707973, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
 --- !u!61 &7923096865228199805
