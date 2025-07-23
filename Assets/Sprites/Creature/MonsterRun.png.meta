@@ -43,8 +43,8 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MonsterRun_0
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 48
+        width: 799
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193c7a67664193842b74168e55c53047
+      internalID: 1295996476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_1
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 48
+        width: 799
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b7a74ca1855674e9ffe73e447e9dc9
+      internalID: 1705616571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_2
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 8
+        width: 624
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f945d5b5381e1f45b96ef6a93cef0c4
+      internalID: 1085198557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_3
+      rect:
+        serializedVersion: 2
+        x: 4028
+        y: 8
+        width: 624
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e38801f5bcffb4ab9fa6e80976104e
+      internalID: 716370588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_4
+      rect:
+        serializedVersion: 2
+        x: 5308
+        y: 48
+        width: 799
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b86f99188ace9549b13d70fbcce8b0c
+      internalID: -91803810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_5
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 43
+        width: 799
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5ca29f357f3024e994033839444771
+      internalID: -1246039523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_6
+      rect:
+        serializedVersion: 2
+        x: 7868
+        y: 8
+        width: 624
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fb96afa744fea4db78506194e1e0f4
+      internalID: -1166617829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterRun_7
+      rect:
+        serializedVersion: 2
+        x: 9148
+        y: 8
+        width: 624
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b076a62a5da04045aa3a92e0a277eb8
+      internalID: 805435106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MonsterRun_0: 1295996476
+      MonsterRun_1: 1705616571
+      MonsterRun_2: 1085198557
+      MonsterRun_3: 716370588
+      MonsterRun_4: -91803810
+      MonsterRun_5: -1246039523
+      MonsterRun_6: -1166617829
+      MonsterRun_7: 805435106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
