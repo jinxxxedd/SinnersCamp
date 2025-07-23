@@ -18,6 +18,8 @@ public class playermovement : MonoBehaviour
     public bool hasKey = false;
     public REAL_GATE realGate;
 
+    
+
    
     // Start is called before the first frame update
 
@@ -186,8 +188,10 @@ public class playermovement : MonoBehaviour
 
     IEnumerator cutsceneWait(int time)
     {
+        basespeed = 0;
         yield return new WaitForSeconds(time);
         monster.ActivateMonster(); // Activate the monster after the cutscene
+        basespeed = 5;
     }
 
 
