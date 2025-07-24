@@ -5731,14 +5731,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2249214505321003294, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Size.x
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249214505321003294, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249214505321003294, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249214505321003294, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.44
+      objectReference: {fileID: 0}
     - target: {fileID: 3553673752914519745, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
       propertyPath: m_Name
       value: gate real
       objectReference: {fileID: 0}
     - target: {fileID: 5035425158412576147, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 39be670127917e04389da5f5844a53d9, type: 3}
+    - target: {fileID: 5035425158412576147, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035425158412576147, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035425158412576147, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035425158412576147, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 7163267101857410794, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7163267101857410794, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7163267101857410794, guid: efc17b346350b3144a22d2e5163cabab, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.5
