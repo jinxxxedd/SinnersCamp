@@ -9,6 +9,7 @@ public class Monster : MonoBehaviour
     [SerializeField] public float speed = 2.0f;
 
     public chaseMusic chaseMusic; // Reference to the chase music script
+    public AMBIENT AMBIENT;
 
 
     void Start()
@@ -72,6 +73,7 @@ public class Monster : MonoBehaviour
             gameObject.SetActive(true); // Enable monster in this scene
             transform.position = new Vector3(7, -0.5f, 0);
             chaseMusic.PlayShootSound(); // Play chase music when monster is activated
+            
         }
         
     }
