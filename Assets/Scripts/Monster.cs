@@ -63,7 +63,19 @@ public class Monster : MonoBehaviour
 
 
 
+    } 
+    
+    public void ActivateMonster()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            gameObject.SetActive(true); // Enable monster in this scene
+            transform.position = new Vector3(7, -0.5f, 0);
+            chaseMusic.PlayShootSound(); // Play chase music when monster is activated
+        }
+        
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -77,15 +89,5 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void ActivateMonster()
-    {
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            gameObject.SetActive(true); // Enable monster in this scene
-            transform.position = new Vector3(7, -0.5f, 0);
-            chaseMusic.PlayShootSound(); // Play chase music when monster is activated
-        }
-        
-    }
 }
 
